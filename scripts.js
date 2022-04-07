@@ -32,7 +32,7 @@ btnRoll.addEventListener('click', function () {
 
         const randomNumber = Math.floor(Math.random() * 6) + 1
         diceEl.classList.remove('hidden')
-        diceEl.src = `/img/dice-${randomNumber}.png`
+        diceEl.src = `./img/dice-${randomNumber}.png`
 
         if (randomNumber != 1) {
             currentScore += randomNumber
