@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 48px 80px  rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+.hidden{
+    display: none;
+   
+}
+.winner_player{
+    background-color: #6BCB77;
+    
+}
+.active{
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+.player{
+    max-width: 300px;
+    height: 445px;
+    text-align: center;
+    padding: 90px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.75s;
+}
+h2{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+.score{
+    font-size: 6rem;
+    margin-bottom: 127px;
+    color: rgba(148,187,233,1);
+}
+.current{
+    width: 112px;
+    height: 80px;
+    padding: 20px;
+    background-color: rgba(148,187,233,1);
+    border-radius: 10px;
+}
+.current_label{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.current_socre{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.btns{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.dice, .btn_hold, .btn_new,.btn_roll{
+    position: absolute;
+}
+.btn{
+    color: #444;
+    background: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.8rem;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+    transform: translateY(5px);
+}  
+.btn_new{
+    top: 3.5rem;
+}
+.btn_roll{
+    top: 26rem;
+}
+.btn_hold{
+    top: 30rem;
+}
+.dice{
+    top: 12rem;
+    height: 5rem;
+    box-shadow: 0px 5px 15px  rgba(0, 0, 0, 0.25);
+}
